@@ -2,29 +2,29 @@
 cask "exigo" do
   postflight_steps do
     if_path_exists "/usr/bin/xattr" do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/exigo"]
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/exigo"]
     end
   end
 
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     on_arm do
-      sha256 "45d2ea64150e963c7d4aea473ec9e36c85209eadcd648870afc01dacadbaf55c"
+      sha256 "81168b0fdd5a543cbe686d45f7fefb43e447cab836a52ebf8a8e033c6ae71a93"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2cb3fe6810ecdc3c04a5344a37c17ea2022576841f9ad4d0a547627ae50a869b"
+      sha256 "f023d010962fec1bee72cf4906a2991a1727765364fc24a284dff608329e9221"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0dd3d08b0a4b0f02f0d6a5dd5823cb9b269aad5c9a816ba3267d6bc96067a9cb"
+      sha256 "fab967f71ff5f115dc66fcd045f42100056f13636c4f5a8fc2b3c6e56d41a5bd"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7399a66ef2c1044de2d9858fb5121f57f2e5ae9bc509b655509df46f084a2585"
+      sha256 "b85de2f98074dd016d0180fb81522e58ce162171ade80ba9f8be5bae22f55375"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_linux_amd64.tar.gz"
     end
   end
