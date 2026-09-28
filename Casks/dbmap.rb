@@ -6,19 +6,19 @@ cask "dbmap" do
     end
   end
 
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    sha256 "77bf38acc41f8daaeb2514542510421062322db54cbad2096fa9d8ed840e0528"
+    sha256 "22d4fe3ea4013828f54c60ba1da2343a1fc2745686c51a3df5fcc7988dbeefae"
     url "https://github.com/branow/dbmap/releases/download/v#{version}/dbmap_#{version}_darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "f88e450fcc1a6ff2270a3ab2e055cd9e15be7b6223f63fee52be576e92c2b1ee"
+      sha256 "8e89bb22113f8bbc4937545ef0b494ef94f8665084c98aea77a26891577deb99"
       url "https://github.com/branow/dbmap/releases/download/v#{version}/dbmap_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "8cc98f2d8471164a2b40d1b3ec350568864fc3489f5455b594451a6a620da3eb"
+      sha256 "7cb63284ec01ffe1e1e3369a6e84e3efb530d19badf88e7bf867983e7e327076"
       url "https://github.com/branow/dbmap/releases/download/v#{version}/dbmap_#{version}_linux_amd64.tar.gz"
     end
   end
