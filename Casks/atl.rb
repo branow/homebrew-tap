@@ -6,25 +6,25 @@ cask "atl" do
     end
   end
 
-  version "0.1.6"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "2fd7e4c8d82ef8aa184e5027501963e00c4cb863a23237a2f0f3da8dd2b5854e"
+      sha256 "0937769aaa414cec44b96e6144963bf59cbf26e33000ae2536f82c65aa927b01"
       url "https://github.com/branow/atlassian-cli/releases/download/v#{version}/atl_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "068e6c780f58c9093324c5f41b5c2563eb84cc73b5aa409431c8ef62157cfbda"
+      sha256 "9c25a675e40324c962f2059175b8fc9638cbb4604be9ec1e35eff91d2eb81703"
       url "https://github.com/branow/atlassian-cli/releases/download/v#{version}/atl_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e18019a744edad3955aabf175c17898ee6fd5b227d280b0bcaf27b4bc682f428"
+      sha256 "03ac8ae1fe8d20c9e1c286b4ed0a577c80174a7eb8d9f69f104ff81b7ba9d871"
       url "https://github.com/branow/atlassian-cli/releases/download/v#{version}/atl_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "390597ab9a80686db4d4b434cf642ffb7add9e30c55491694fc09d5a0fa01b65"
+      sha256 "9e7656261648c3f2746c112c7e72a91a33d43f5878fbf40d7509c3b372cd6373"
       url "https://github.com/branow/atlassian-cli/releases/download/v#{version}/atl_#{version}_linux_amd64.tar.gz"
     end
   end
