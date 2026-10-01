@@ -6,25 +6,25 @@ cask "exigo" do
     end
   end
 
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     on_arm do
-      sha256 "ed58ce971467a710c814b5d3be0ea111961085da2ec12090ccddb45c3b0f1c71"
+      sha256 "c6c50e6ead4b5336ed5b3df86843ab1b92b5f1b877826662b2647a6e367f8a2b"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f9195420ea3858d402410186fe0de1ea2b4200d1997a1fec6491b79b533aa88d"
+      sha256 "2a4664781d20b92c796451496c6cf033f93f2cc53094b3ec133c4ad312b94cba"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "8adb259c35cbf626e0d2b94cf53d2fa60abb87cb8ef34dbf795db0012e01d677"
+      sha256 "5f3519e463ad974adc5fac63c613b119e88afa0b8b7c77535469b94a3c04d551"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7bc01d70c98da2f89f9ede9813609f0a9699bb4d5985f84a8dd5b90c4469bcc6"
+      sha256 "e9841c423568bfd8b40b34c4e19e2922b963d361f32163a8b7ba6e9f33e3de59"
       url "https://github.com/branow/exigo-cli/releases/download/v#{version}/exigo_#{version}_linux_amd64.tar.gz"
     end
   end
