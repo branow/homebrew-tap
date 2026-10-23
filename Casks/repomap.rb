@@ -6,19 +6,19 @@ cask "repomap" do
     end
   end
 
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    sha256 "b01407b49796a1d0fbee306b2ae7e9da91d825e28091c3f7391b76d654a296c0"
+    sha256 "555cf43e7f7796670b0bbb0603df9511feabe3b4ae7d119fbbcefe2ed723d529"
     url "https://github.com/branow/repomap/releases/download/v#{version}/repomap_#{version}_darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "ffa4272ae6c331f5de21b256f3160df8edff02ed9e71c2302dec5798a2befd50"
+      sha256 "319d5f0f6174087e60de0dcd691a94df23eb6736b7faff647e7dde00be5a4b40"
       url "https://github.com/branow/repomap/releases/download/v#{version}/repomap_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "75706c36ff61cfd6725d2bf852e90e8f59be60e94934f64e9efda8c49d9ea4c3"
+      sha256 "d10ce81b2875b0c24273efd0ca109bfa1dfefddb8483431edcc8468489c016c4"
       url "https://github.com/branow/repomap/releases/download/v#{version}/repomap_#{version}_linux_amd64.tar.gz"
     end
   end
